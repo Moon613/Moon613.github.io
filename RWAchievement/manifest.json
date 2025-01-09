@@ -1,0 +1,170 @@
+{
+  "source_base_path": "C:/Users/willz/Desktop/RainWorldRemix/Moon613.github.io",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RWAchievements.Achievement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RWAchievements.Achievement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RWAchievements.AchievementOPSimpleButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RWAchievements.AchievementOPSimpleButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RWAchievements.AchievementPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RWAchievements.AchievementPage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RWAchievements.DefaultPopup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RWAchievements.DefaultPopup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RWAchievements.ListViewButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RWAchievements.ListViewButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RWAchievements.Plugin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RWAchievements.Plugin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RWAchievements.Popup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RWAchievements.Popup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RWAchievements.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RWAchievements.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/the-code-part.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/the-code-part.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

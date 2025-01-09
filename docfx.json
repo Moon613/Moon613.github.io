@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../RWAchievement",
+          "files": [
+            "RWAchievement.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "RWAchievement/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "RWAchievement",
+    "template": [
+      "default",
+      "templates/singulinkfx"
+    ],
+    "globalMetadata": {
+      "_appName": "RWAchievement",
+      "_appTitle": "RWAchievement",
+      "_enableSearch": false,
+      "pdf": false
+    }
+  }
+}

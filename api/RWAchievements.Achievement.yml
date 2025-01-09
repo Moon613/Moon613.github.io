@@ -1,0 +1,926 @@
+### YamlMime:ManagedReference
+items:
+- uid: RWAchievements.Achievement
+  commentId: T:RWAchievements.Achievement
+  id: Achievement
+  parent: RWAchievements
+  children:
+  - RWAchievements.Achievement.ToString
+  - RWAchievements.Achievement.TriggerAchievement(RainWorld,System.String)
+  - RWAchievements.Achievement.TriggerAchievement``1(RainWorld,System.String)
+  - RWAchievements.Achievement.achievementName
+  - RWAchievements.Achievement.dateAchieved
+  - RWAchievements.Achievement.description
+  - RWAchievements.Achievement.flatImageName
+  - RWAchievements.Achievement.idleDepths
+  - RWAchievements.Achievement.imageDepths
+  - RWAchievements.Achievement.imageFolder
+  - RWAchievements.Achievement.imageShaders
+  - RWAchievements.Achievement.images
+  - RWAchievements.Achievement.internalID
+  - RWAchievements.Achievement.originMod
+  - RWAchievements.Achievement.unlocked
+  langs:
+  - csharp
+  - vb
+  name: Achievement
+  nameWithType: Achievement
+  fullName: RWAchievements.Achievement
+  type: Class
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: Achievement
+    path: ../RWAchievement/Plugin.cs
+    startLine: 453
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public class Achievement
+    content.vb: Public Class Achievement
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: RWAchievements.Achievement.TriggerAchievement``1(RainWorld,System.String)
+  commentId: M:RWAchievements.Achievement.TriggerAchievement``1(RainWorld,System.String)
+  id: TriggerAchievement``1(RainWorld,System.String)
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: TriggerAchievement<T>(RainWorld, string)
+  nameWithType: Achievement.TriggerAchievement<T>(RainWorld, string)
+  fullName: RWAchievements.Achievement.TriggerAchievement<T>(RainWorld, string)
+  type: Method
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: TriggerAchievement
+    path: ../RWAchievement/Plugin.cs
+    startLine: 540
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: 'public static void TriggerAchievement<T>(RainWorld rainWorld, string ID) where T : Popup'
+    parameters:
+    - id: rainWorld
+      type: RainWorld
+    - id: ID
+      type: System.String
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub TriggerAchievement(Of T As Popup)(rainWorld As RainWorld, ID As String)
+  overload: RWAchievements.Achievement.TriggerAchievement*
+  nameWithType.vb: Achievement.TriggerAchievement(Of T)(RainWorld, String)
+  fullName.vb: RWAchievements.Achievement.TriggerAchievement(Of T)(RainWorld, String)
+  name.vb: TriggerAchievement(Of T)(RainWorld, String)
+- uid: RWAchievements.Achievement.TriggerAchievement(RainWorld,System.String)
+  commentId: M:RWAchievements.Achievement.TriggerAchievement(RainWorld,System.String)
+  id: TriggerAchievement(RainWorld,System.String)
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: TriggerAchievement(RainWorld, string)
+  nameWithType: Achievement.TriggerAchievement(RainWorld, string)
+  fullName: RWAchievements.Achievement.TriggerAchievement(RainWorld, string)
+  type: Method
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: TriggerAchievement
+    path: ../RWAchievement/Plugin.cs
+    startLine: 555
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public static void TriggerAchievement(RainWorld rainWorld, string ID)
+    parameters:
+    - id: rainWorld
+      type: RainWorld
+    - id: ID
+      type: System.String
+    content.vb: Public Shared Sub TriggerAchievement(rainWorld As RainWorld, ID As String)
+  overload: RWAchievements.Achievement.TriggerAchievement*
+  nameWithType.vb: Achievement.TriggerAchievement(RainWorld, String)
+  fullName.vb: RWAchievements.Achievement.TriggerAchievement(RainWorld, String)
+  name.vb: TriggerAchievement(RainWorld, String)
+- uid: RWAchievements.Achievement.ToString
+  commentId: M:RWAchievements.Achievement.ToString
+  id: ToString
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Achievement.ToString()
+  fullName: RWAchievements.Achievement.ToString()
+  type: Method
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: ToString
+    path: ../RWAchievement/Plugin.cs
+    startLine: 623
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: RWAchievements.Achievement.ToString*
+- uid: RWAchievements.Achievement.achievementName
+  commentId: F:RWAchievements.Achievement.achievementName
+  id: achievementName
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: achievementName
+  nameWithType: Achievement.achievementName
+  fullName: RWAchievements.Achievement.achievementName
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: achievementName
+    path: ../RWAchievement/Plugin.cs
+    startLine: 640
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public string achievementName
+    return:
+      type: System.String
+    content.vb: Public achievementName As String
+- uid: RWAchievements.Achievement.dateAchieved
+  commentId: F:RWAchievements.Achievement.dateAchieved
+  id: dateAchieved
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: dateAchieved
+  nameWithType: Achievement.dateAchieved
+  fullName: RWAchievements.Achievement.dateAchieved
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: dateAchieved
+    path: ../RWAchievement/Plugin.cs
+    startLine: 641
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public string dateAchieved
+    return:
+      type: System.String
+    content.vb: Public dateAchieved As String
+- uid: RWAchievements.Achievement.imageFolder
+  commentId: F:RWAchievements.Achievement.imageFolder
+  id: imageFolder
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: imageFolder
+  nameWithType: Achievement.imageFolder
+  fullName: RWAchievements.Achievement.imageFolder
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: imageFolder
+    path: ../RWAchievement/Plugin.cs
+    startLine: 642
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public string imageFolder
+    return:
+      type: System.String
+    content.vb: Public imageFolder As String
+- uid: RWAchievements.Achievement.flatImageName
+  commentId: F:RWAchievements.Achievement.flatImageName
+  id: flatImageName
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: flatImageName
+  nameWithType: Achievement.flatImageName
+  fullName: RWAchievements.Achievement.flatImageName
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: flatImageName
+    path: ../RWAchievement/Plugin.cs
+    startLine: 643
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public string flatImageName
+    return:
+      type: System.String
+    content.vb: Public flatImageName As String
+- uid: RWAchievements.Achievement.images
+  commentId: F:RWAchievements.Achievement.images
+  id: images
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: images
+  nameWithType: Achievement.images
+  fullName: RWAchievements.Achievement.images
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: images
+    path: ../RWAchievement/Plugin.cs
+    startLine: 644
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public string[]? images
+    return:
+      type: System.String[]
+    content.vb: Public images As String()
+- uid: RWAchievements.Achievement.imageShaders
+  commentId: F:RWAchievements.Achievement.imageShaders
+  id: imageShaders
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: imageShaders
+  nameWithType: Achievement.imageShaders
+  fullName: RWAchievements.Achievement.imageShaders
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: imageShaders
+    path: ../RWAchievement/Plugin.cs
+    startLine: 645
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public List<MenuDepthIllustration.MenuShader> imageShaders
+    return:
+      type: System.Collections.Generic.List{Menu.MenuDepthIllustration.MenuShader}
+    content.vb: Public imageShaders As List(Of MenuDepthIllustration.MenuShader)
+- uid: RWAchievements.Achievement.idleDepths
+  commentId: F:RWAchievements.Achievement.idleDepths
+  id: idleDepths
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: idleDepths
+  nameWithType: Achievement.idleDepths
+  fullName: RWAchievements.Achievement.idleDepths
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: idleDepths
+    path: ../RWAchievement/Plugin.cs
+    startLine: 646
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public List<float> idleDepths
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public idleDepths As List(Of Single)
+- uid: RWAchievements.Achievement.imageDepths
+  commentId: F:RWAchievements.Achievement.imageDepths
+  id: imageDepths
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: imageDepths
+  nameWithType: Achievement.imageDepths
+  fullName: RWAchievements.Achievement.imageDepths
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: imageDepths
+    path: ../RWAchievement/Plugin.cs
+    startLine: 647
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public List<float> imageDepths
+    return:
+      type: System.Collections.Generic.List{System.Single}
+    content.vb: Public imageDepths As List(Of Single)
+- uid: RWAchievements.Achievement.description
+  commentId: F:RWAchievements.Achievement.description
+  id: description
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: description
+  nameWithType: Achievement.description
+  fullName: RWAchievements.Achievement.description
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: description
+    path: ../RWAchievement/Plugin.cs
+    startLine: 648
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public string description
+    return:
+      type: System.String
+    content.vb: Public description As String
+- uid: RWAchievements.Achievement.originMod
+  commentId: F:RWAchievements.Achievement.originMod
+  id: originMod
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: originMod
+  nameWithType: Achievement.originMod
+  fullName: RWAchievements.Achievement.originMod
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: originMod
+    path: ../RWAchievement/Plugin.cs
+    startLine: 649
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public string? originMod
+    return:
+      type: System.String
+    content.vb: Public originMod As String
+- uid: RWAchievements.Achievement.unlocked
+  commentId: F:RWAchievements.Achievement.unlocked
+  id: unlocked
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: unlocked
+  nameWithType: Achievement.unlocked
+  fullName: RWAchievements.Achievement.unlocked
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: unlocked
+    path: ../RWAchievement/Plugin.cs
+    startLine: 650
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public bool unlocked
+    return:
+      type: System.Boolean
+    content.vb: Public unlocked As Boolean
+- uid: RWAchievements.Achievement.internalID
+  commentId: F:RWAchievements.Achievement.internalID
+  id: internalID
+  parent: RWAchievements.Achievement
+  langs:
+  - csharp
+  - vb
+  name: internalID
+  nameWithType: Achievement.internalID
+  fullName: RWAchievements.Achievement.internalID
+  type: Field
+  source:
+    remote:
+      path: Plugin.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: internalID
+    path: ../RWAchievement/Plugin.cs
+    startLine: 652
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public string internalID
+    return:
+      type: System.String
+    content.vb: Public internalID As String
+references:
+- uid: RWAchievements
+  commentId: N:RWAchievements
+  href: RWAchievements.html
+  name: RWAchievements
+  nameWithType: RWAchievements
+  fullName: RWAchievements
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RWAchievements.Achievement.TriggerAchievement*
+  commentId: Overload:RWAchievements.Achievement.TriggerAchievement
+  href: RWAchievements.Achievement.html#RWAchievements_Achievement_TriggerAchievement__1_RainWorld_System_String_
+  name: TriggerAchievement
+  nameWithType: Achievement.TriggerAchievement
+  fullName: RWAchievements.Achievement.TriggerAchievement
+- uid: RainWorld
+  commentId: T:RainWorld
+  isExternal: true
+  name: RainWorld
+  nameWithType: RainWorld
+  fullName: RainWorld
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: RWAchievements.Achievement.ToString*
+  commentId: Overload:RWAchievements.Achievement.ToString
+  href: RWAchievements.Achievement.html#RWAchievements_Achievement_ToString
+  name: ToString
+  nameWithType: Achievement.ToString
+  fullName: RWAchievements.Achievement.ToString
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{Menu.MenuDepthIllustration.MenuShader}
+  commentId: T:System.Collections.Generic.List{Menu.MenuDepthIllustration.MenuShader}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MenuDepthIllustration.MenuShader>
+  nameWithType: List<MenuDepthIllustration.MenuShader>
+  fullName: System.Collections.Generic.List<Menu.MenuDepthIllustration.MenuShader>
+  nameWithType.vb: List(Of MenuDepthIllustration.MenuShader)
+  fullName.vb: System.Collections.Generic.List(Of Menu.MenuDepthIllustration.MenuShader)
+  name.vb: List(Of MenuDepthIllustration.MenuShader)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Menu.MenuDepthIllustration
+    name: MenuDepthIllustration
+    isExternal: true
+  - name: .
+  - uid: Menu.MenuDepthIllustration.MenuShader
+    name: MenuShader
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Menu.MenuDepthIllustration
+    name: MenuDepthIllustration
+    isExternal: true
+  - name: .
+  - uid: Menu.MenuDepthIllustration.MenuShader
+    name: MenuShader
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List{System.Single}
+  commentId: T:System.Collections.Generic.List{System.Single}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<float>
+  nameWithType: List<float>
+  fullName: System.Collections.Generic.List<float>
+  nameWithType.vb: List(Of Single)
+  fullName.vb: System.Collections.Generic.List(Of Single)
+  name.vb: List(Of Single)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

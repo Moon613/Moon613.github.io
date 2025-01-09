@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: RWAchievements
+  commentId: N:RWAchievements
+  id: RWAchievements
+  children:
+  - RWAchievements.Achievement
+  - RWAchievements.AchievementPage
+  - RWAchievements.DefaultPopup
+  - RWAchievements.Popup
+  langs:
+  - csharp
+  - vb
+  name: RWAchievements
+  nameWithType: RWAchievements
+  fullName: RWAchievements
+  type: Namespace
+  assemblies:
+  - RWAchievement
+references:
+- uid: RWAchievements.AchievementPage
+  commentId: T:RWAchievements.AchievementPage
+  href: RWAchievements.AchievementPage.html
+  name: AchievementPage
+  nameWithType: AchievementPage
+  fullName: RWAchievements.AchievementPage
+- uid: RWAchievements.Popup
+  commentId: T:RWAchievements.Popup
+  parent: RWAchievements
+  href: RWAchievements.Popup.html
+  name: Popup
+  nameWithType: Popup
+  fullName: RWAchievements.Popup
+- uid: RWAchievements.DefaultPopup
+  commentId: T:RWAchievements.DefaultPopup
+  href: RWAchievements.DefaultPopup.html
+  name: DefaultPopup
+  nameWithType: DefaultPopup
+  fullName: RWAchievements.DefaultPopup
+- uid: RWAchievements.Achievement
+  commentId: T:RWAchievements.Achievement
+  parent: RWAchievements
+  href: RWAchievements.Achievement.html
+  name: Achievement
+  nameWithType: Achievement
+  fullName: RWAchievements.Achievement
+- uid: RWAchievements
+  commentId: N:RWAchievements
+  href: RWAchievements.html
+  name: RWAchievements
+  nameWithType: RWAchievements
+  fullName: RWAchievements

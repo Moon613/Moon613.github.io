@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Getting Started | RWAchievement </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Getting Started | RWAchievement ">
+      <meta name="generator" content="docfx ">
+  
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous">
+      <link rel="stylesheet" href="../styles/config.css">
+      <link rel="stylesheet" href="../styles/singulink.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+  
+  
+  
+    </head>
+    <body>
+        <!-- Header required for docfx anchor scroll to work -->
+        <header id="head"></header>
+        <div class="top-navbar">
+            <a class="burger-icon" onclick="toggleMenu()">
+                <svg name="Hamburger" style="vertical-align: middle;" width="34" height="34" viewbox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M20 6H4V9H20V6ZM4 10.999H20V13.999H4V10.999ZM4 15.999H20V18.999H4V15.999Z"></path></svg>
+            </a>
+
+
+            <a class="brand" href="../index.html">
+              <img src="../logo.svg" alt="RWAchievement" class="logomark">
+              <span class="brand-title">RWAchievement</span>
+            </a>        </div>
+
+        <div class="body-content">
+            <div id="blackout" class="blackout" onclick="toggleMenu()"></div>
+
+            <nav id="sidebar" role="navigation">
+                <div class="sidebar">
+
+                    <div>
+                      <div class="mobile-hide">
+
+                        <a class="brand" href="../index.html">
+                          <img src="../logo.svg" alt="RWAchievement" class="logomark">
+                          <span class="brand-title">RWAchievement</span>
+                        </a>                      </div>
+
+
+                      <div id="navbar">
+                      </div>
+                    </div>                    <div class="sidebar-item-separator"></div>
+
+                        <div id="sidetoggle">
+                          <div id="sidetoc"></div>
+                        </div>
+                </div>
+                <div class="footer">
+  
+  <strong><a href='https://dotnet.github.io/docfx/'>DocFX</a> + <a href='https://www.singulink.com'>Singulink</a> = ♥</strong>
+                </div>            </nav>
+
+            <main class="main-panel">
+
+ 
+
+                <div role="main" class="hide-when-search">
+
+                        <div class="subnav navbar navbar-default">
+                          <div class="container hide-when-search" id="breadcrumb">
+                            <ul class="breadcrumb">
+                              <li></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                         <div id="contribution">
+                               <a href="https://github.com/Moon613/Moon613.github.io/blob/main/docs/getting-started.md/#L1" class="contribution-link">Edit this page</a>
+                         </div>
+
+                    <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This guide assumes that you know how to create a basic mod for Rain World (or already have), and modify JSON files. If you do not know how to create a Rain World Mod, you can follow the <a href="https://slimecubed.github.io/slugbase/articles/template.html">Slugbase tutorial</a> for a basic tutorial, and then come back here.</p>
+<p>This part of the documentation will guide you on how to set up the JSON file for your achievement, the necessary coding required will be covered in the next section.</p>
+<h2 id="custom-achievements">Custom Achievements</h2>
+<p>In order to create a custom achievement for your mod, first, in your mod's main folder, create a folder called <code>achievements</code> and inside of that create a file called <code>myachievement.json</code>. The path should be <code>MODNAME/achivements/myachievement.json</code>. The name does not matter, and will not conflict with another mod that has a json file with the same name. The contents of your json file must be a single json object, and the &quot;id&quot; field filled out.</p>
+<pre><code class="lang-json">{
+    &quot;id&quot;: &quot;MyID&quot;
+}
+</code></pre>
+<p>The id must be unique, so choose something fun!</p>
+<p>While this will make a page show up in the achievement menu, there will not be anything useful in it. Let's change that.</p>
+<p>The following properties are able to be added to the Json file: <code>name</code>, <code>imageFolder</code>, <code>flat</code>, <code>description</code>, and <code>origin</code>. <code>depthIllustrations</code> and <code>idleDepths</code> also exist, and information about them can be found below this section.</p>
+<pre><code class="lang-json">{
+    &quot;id&quot;: &quot;MyID&quot;,
+    &quot;name&quot;: &quot;A New achivement&quot;,
+    &quot;imageFolder&quot;: &quot;&quot;,
+    &quot;flat&quot;: &quot;my achivement image&quot;,
+    &quot;description&quot;: &quot;This is my awesome\nnew achivement&quot;,
+    &quot;origin&quot;: &quot;My Mod&quot;
+}
+</code></pre>
+<ul>
+<li><code>name</code>: This will set the display name of the achievemnt on the page. If not included, the empty string (nothing) will be used instead.</li>
+<li><code>imageFolder</code>: This sets the path to the folder containing the images to be shown with your achievement. This is relative to <code>StreamingAssets</code> or your mod's folder, and defaults to <code>illustrations</code> if not included.</li>
+<li><code>flat</code>: This is the image that will be shown when a user is on the lowest graphics settings, or <code>depthIllustrations</code> is not included. If this is not included, no image will be shown. The image will be centered in the middle of the screen.</li>
+<li><code>description</code>: The achievement's description. If this is not included, no description will be shown. A <code>\n</code> can be used to make a new line.</li>
+<li><code>origin</code>: This lets you indicate which mod this achievement is from. If this is not included, then there will be no indication which mod it has come from. Otherwise, the text &quot;From: My Mod&quot; will be shown under the name of the achievement in this case, because we have set the <code>origin</code> property to &quot;My Mod&quot;.</li>
+</ul>
+<h2 id="advanced-illustrations">Advanced Illustrations</h2>
+<p>As stated before, there is also an option to add the <code>depthIllustrations</code> and <code>idleDepths</code> properties. This will allow you to add a series of images, to achieve the same effect that slugcat select menu arts have. They consist of multiple layered images that will drift around a bit.</p>
+<p><code>depthIllustrations</code> is a list of objects, each with their own properties. <code>idleDepths</code> is a list of floats. The syntax is as follows, adding on to the previous example:</p>
+<pre><code class="lang-json">{
+    &quot;id&quot;: &quot;MyID&quot;,
+    &quot;name&quot;: &quot;A New achivement&quot;,
+    &quot;imageFolder&quot;: &quot;&quot;,
+    &quot;flat&quot;: &quot;my achivement image&quot;,
+    &quot;description&quot;: &quot;This is my awesome\nnew achivement&quot;,
+    &quot;origin&quot;: &quot;My Mod&quot;,
+    &quot;idleDepths&quot;: [
+        1,
+        1.5
+    ],
+    &quot;depthIllustrations&quot;: [
+        {
+            &quot;image&quot;: &quot;MyImage1&quot;,
+            &quot;depth&quot;: 1,
+            &quot;shader&quot;: &quot;basic&quot;
+        }
+    ]
+}
+</code></pre>
+<ul>
+<li><code>depthIllustrations</code>: These are the images that will be used to make the scene for your achievement's page. It is a list of groups of properties for each image, where they are grouped together by a set of curly braces. The images listed first will be positioned behind the images listed last. .
+<ul>
+<li><code>image</code>: The name of the image that will be used. The image must be in the same directory as the <code>imageFolder</code> property. It is important to keep the dimensions of the images 1488x868, as that is the expected image resolution so that they can be centered in the middle of the screen</li>
+<li><code>depth</code>: The depth of the image. This will partially influence how much it moves around, the lower the number is the more the image tends to move. This also comes into play for image blurring. The scene will focus on semi-random depths when being interacted with via the user moving their mouse, and the specific depths listed in <code>idleDepths</code> when the scene is left idle.</li>
+<li><code>shader</code>: The type of shader to be used. It can be &quot;basic&quot;, &quot;normal&quot;, &quot;lighten&quot;, &quot;lightedges&quot;, &quot;rain&quot;, &quot;overlay&quot;, &quot;softlight&quot;, or &quot;multiply&quot;. If a shader is used that makes use of red highlights under the image, then the image height must be doubled to 1736, with the red part taking up the bottom half of the image.</li>
+</ul>
+</li>
+<li><code>idleDepths</code>: This is a list of depths that the scene will randomly choose from, and cycle through, to focus on while idling. Images that have depths close to depths listed here will have almost no blur while that depth is focused on.</li>
+</ul>
+
+</article>
+                </div>
+
+            </main>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <script type="text/javascript" src="../styles/jquery.twbsPagination.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/jquery.mark.min.js"></script>
+        <script type="text/javascript" src="../styles/url.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js"></script>
+        <script type="text/javascript" src="../styles/docfx.js"></script>
+        <script type="text/javascript" src="../styles/main.js"></script>
+        <script type="text/javascript" src="../styles/singulink.js"></script>    </body>
+</html>

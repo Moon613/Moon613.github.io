@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: RWAchievements.Popup
+  commentId: T:RWAchievements.Popup
+  id: Popup
+  parent: RWAchievements
+  children:
+  - RWAchievements.Popup.#ctor(RWAchievements.Achievement)
+  - RWAchievements.Popup.GetAchievement
+  - RWAchievements.Popup.GrafUpdate(System.Single)
+  - RWAchievements.Popup.Update
+  - RWAchievements.Popup.lastPos
+  - RWAchievements.Popup.pos
+  langs:
+  - csharp
+  - vb
+  name: Popup
+  nameWithType: Popup
+  fullName: RWAchievements.Popup
+  type: Class
+  source:
+    remote:
+      path: AchievementPopup.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: Popup
+    path: ../RWAchievement/AchievementPopup.cs
+    startLine: 11
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public abstract class Popup
+    content.vb: Public MustInherit Class Popup
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - RWAchievements.DefaultPopup
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: RWAchievements.Popup.pos
+  commentId: F:RWAchievements.Popup.pos
+  id: pos
+  parent: RWAchievements.Popup
+  langs:
+  - csharp
+  - vb
+  name: pos
+  nameWithType: Popup.pos
+  fullName: RWAchievements.Popup.pos
+  type: Field
+  source:
+    remote:
+      path: AchievementPopup.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: pos
+    path: ../RWAchievement/AchievementPopup.cs
+    startLine: 17
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  summary: To be used with the lastPos field for linear interpolation in the GrafUpdate method.
+  example: []
+  syntax:
+    content: public Vector2 pos
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public pos As Vector2
+- uid: RWAchievements.Popup.lastPos
+  commentId: F:RWAchievements.Popup.lastPos
+  id: lastPos
+  parent: RWAchievements.Popup
+  langs:
+  - csharp
+  - vb
+  name: lastPos
+  nameWithType: Popup.lastPos
+  fullName: RWAchievements.Popup.lastPos
+  type: Field
+  source:
+    remote:
+      path: AchievementPopup.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: lastPos
+    path: ../RWAchievement/AchievementPopup.cs
+    startLine: 21
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  summary: To be used with the pos field for linear interpolation in the GrafUpdate method.
+  example: []
+  syntax:
+    content: public Vector2 lastPos
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public lastPos As Vector2
+- uid: RWAchievements.Popup.#ctor(RWAchievements.Achievement)
+  commentId: M:RWAchievements.Popup.#ctor(RWAchievements.Achievement)
+  id: '#ctor(RWAchievements.Achievement)'
+  parent: RWAchievements.Popup
+  langs:
+  - csharp
+  - vb
+  name: Popup(Achievement)
+  nameWithType: Popup.Popup(Achievement)
+  fullName: RWAchievements.Popup.Popup(RWAchievements.Achievement)
+  type: Constructor
+  source:
+    remote:
+      path: AchievementPopup.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: .ctor
+    path: ../RWAchievement/AchievementPopup.cs
+    startLine: 22
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  syntax:
+    content: public Popup(Achievement achievement)
+    parameters:
+    - id: achievement
+      type: RWAchievements.Achievement
+    content.vb: Public Sub New(achievement As Achievement)
+  overload: RWAchievements.Popup.#ctor*
+  nameWithType.vb: Popup.New(Achievement)
+  fullName.vb: RWAchievements.Popup.New(RWAchievements.Achievement)
+  name.vb: New(Achievement)
+- uid: RWAchievements.Popup.GrafUpdate(System.Single)
+  commentId: M:RWAchievements.Popup.GrafUpdate(System.Single)
+  id: GrafUpdate(System.Single)
+  parent: RWAchievements.Popup
+  langs:
+  - csharp
+  - vb
+  name: GrafUpdate(float)
+  nameWithType: Popup.GrafUpdate(float)
+  fullName: RWAchievements.Popup.GrafUpdate(float)
+  type: Method
+  source:
+    remote:
+      path: AchievementPopup.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: GrafUpdate
+    path: ../RWAchievement/AchievementPopup.cs
+    startLine: 29
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  summary: >-
+    This is called as much as possible, but is only called once a frame.
+
+    This should be used for smooth graphics, so that the graphical updates are not tied to the framerate.
+  example: []
+  syntax:
+    content: public virtual void GrafUpdate(float timeStacker)
+    parameters:
+    - id: timeStacker
+      type: System.Single
+    content.vb: Public Overridable Sub GrafUpdate(timeStacker As Single)
+  overload: RWAchievements.Popup.GrafUpdate*
+  nameWithType.vb: Popup.GrafUpdate(Single)
+  fullName.vb: RWAchievements.Popup.GrafUpdate(Single)
+  name.vb: GrafUpdate(Single)
+- uid: RWAchievements.Popup.Update
+  commentId: M:RWAchievements.Popup.Update
+  id: Update
+  parent: RWAchievements.Popup
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: Popup.Update()
+  fullName: RWAchievements.Popup.Update()
+  type: Method
+  source:
+    remote:
+      path: AchievementPopup.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: Update
+    path: ../RWAchievement/AchievementPopup.cs
+    startLine: 34
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  summary: This is called 40 times a second under normal circumstances (no lag). Normal update logic goes here.
+  example: []
+  syntax:
+    content: public virtual void Update()
+    content.vb: Public Overridable Sub Update()
+  overload: RWAchievements.Popup.Update*
+- uid: RWAchievements.Popup.GetAchievement
+  commentId: M:RWAchievements.Popup.GetAchievement
+  id: GetAchievement
+  parent: RWAchievements.Popup
+  langs:
+  - csharp
+  - vb
+  name: GetAchievement()
+  nameWithType: Popup.GetAchievement()
+  fullName: RWAchievements.Popup.GetAchievement()
+  type: Method
+  source:
+    remote:
+      path: AchievementPopup.cs
+      branch: main
+      repo: https://github.com/Moon613/RWAchievement.git
+    id: GetAchievement
+    path: ../RWAchievement/AchievementPopup.cs
+    startLine: 39
+  assemblies:
+  - RWAchievement
+  namespace: RWAchievements
+  summary: This returns the achievement associated with thise Popup
+  example: []
+  syntax:
+    content: public Achievement GetAchievement()
+    return:
+      type: RWAchievements.Achievement
+    content.vb: Public Function GetAchievement() As Achievement
+  overload: RWAchievements.Popup.GetAchievement*
+references:
+- uid: RWAchievements
+  commentId: N:RWAchievements
+  href: RWAchievements.html
+  name: RWAchievements
+  nameWithType: RWAchievements
+  fullName: RWAchievements
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: RWAchievements.Popup.#ctor*
+  commentId: Overload:RWAchievements.Popup.#ctor
+  href: RWAchievements.Popup.html#RWAchievements_Popup__ctor_RWAchievements_Achievement_
+  name: Popup
+  nameWithType: Popup.Popup
+  fullName: RWAchievements.Popup.Popup
+  nameWithType.vb: Popup.New
+  fullName.vb: RWAchievements.Popup.New
+  name.vb: New
+- uid: RWAchievements.Achievement
+  commentId: T:RWAchievements.Achievement
+  parent: RWAchievements
+  href: RWAchievements.Achievement.html
+  name: Achievement
+  nameWithType: Achievement
+  fullName: RWAchievements.Achievement
+- uid: RWAchievements.Popup.GrafUpdate*
+  commentId: Overload:RWAchievements.Popup.GrafUpdate
+  href: RWAchievements.Popup.html#RWAchievements_Popup_GrafUpdate_System_Single_
+  name: GrafUpdate
+  nameWithType: Popup.GrafUpdate
+  fullName: RWAchievements.Popup.GrafUpdate
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: RWAchievements.Popup.Update*
+  commentId: Overload:RWAchievements.Popup.Update
+  href: RWAchievements.Popup.html#RWAchievements_Popup_Update
+  name: Update
+  nameWithType: Popup.Update
+  fullName: RWAchievements.Popup.Update
+- uid: RWAchievements.Popup.GetAchievement*
+  commentId: Overload:RWAchievements.Popup.GetAchievement
+  href: RWAchievements.Popup.html#RWAchievements_Popup_GetAchievement
+  name: GetAchievement
+  nameWithType: Popup.GetAchievement
+  fullName: RWAchievements.Popup.GetAchievement
